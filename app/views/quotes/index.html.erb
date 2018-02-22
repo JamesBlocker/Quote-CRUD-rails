@@ -1,0 +1,7 @@
+<h1>Quotes-ma-goats</h1>
+
+<ul>
+    <% @quotes.each do |q| %>
+        <li><%= link_to(q.author, "/quotes/#{q.id}") %></li>
+    <% end %>
+</ul>

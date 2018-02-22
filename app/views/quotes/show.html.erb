@@ -1,0 +1,10 @@
+<h1>Sayeth the raven</h1>
+<hr>
+<h2>"<%= @quote.body %>"</h2>
+<h3>-<%= @quote.author %></h3>
+
+<ul>
+    <li><%= link_to("Edit", "/quotes/#{@quote.id}/edit") %></li>
+    <li><%= link_to("Back", "/quotes") %></li>
+    <li><%= link_to("Delete quote", "/quotes/#{@quote.id}", {method: 'delete', data: {confirm: "Are you sure?"} } ) %></li>
+</ul>

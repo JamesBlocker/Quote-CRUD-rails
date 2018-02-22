@@ -1,0 +1,6 @@
+<h1>Edit quote</h1>
+<%= form_for(@quote) do |f| %>
+    <%= f.text_field(:body, {placeholder: "Enter quote"}) %>
+    <%= f.text_field(:author, {placeholder: "Author"}) %>
+    <%= f.submit %>
+<% end %>
